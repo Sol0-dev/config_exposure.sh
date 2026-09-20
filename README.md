@@ -1,4 +1,5 @@
 ### config_exposure_scan.sh
+______________________________________________________________________________
 
  Checks a list of hosts for common publicly-exposed sensitive files
  (config.json, .env, .git/config, etc.) -- httpx/nuclei style CLI.
@@ -8,6 +9,7 @@
  summary report -- just like other bug bounty scanners. No tail -f
  needed, nothing hidden in a log file.
 _____________________________________________________________________________
+
 ## USAGE:
 ```
    ./config_exposure_scan.sh -l urls.txt [-c concurrency] [-v] [-q]
@@ -20,6 +22,7 @@ _____________________________________________________________________________
    -h              Show this help
 ```
 ______________________________________________________________________________
+
 ## OUTPUT FILES (still written for later reference):
 ```
    found.txt        -> ONLY confirmed HTTP 200 hits with real content
