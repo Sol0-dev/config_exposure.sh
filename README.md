@@ -32,3 +32,10 @@ ______________________________________________________________________________
 Termux-safe: single curl call per check (low process count) so Android
 doesn't kill the session, and auto-holds a wake-lock (if available)
 for the duration of the scan so the screen can lock without it dying.
+
+### validate.sh (Fixed & Smarter)
+______________________________________________________________________________
+```
+Verifies items in found.txt for genuine valuable secrets/configurations
+and filters out empty stubs / false positives.
+```
